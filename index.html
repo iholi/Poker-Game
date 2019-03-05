@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Isabel Ho Li">
+    <meta name="description" content="Poker Game">
+    <title>Poker Game</title>
+    <link rel="icon" href="images/icon.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-lg-2 center"></div>
+        <div class="col center">
+            <h1 id="announce" class='section title center'>Poker Game</h1>
+        </div>
+        <div class="col-lg-2 center pot">
+            <p id="pot">0</p>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-lg-2 center">
+            <img class="square" src="images/Female.gif" alt="Player 1">
+        </div>
+        <div class="col-lg-auto center">
+            <img id='card0_1' src="images/red_back.png" alt="card1" class="square">
+            <img id='card1_1' src="images/red_back.png" alt="card2" class="square">
+        </div>
+        <div class="col-lg-2 center chips">
+            <p id="chips_1">0</p>
+        </div>
+        <div class="col-lg-2 center">
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='check_1' type="button" class="btn btn-danger btn-sm btn-block">Check</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='bet_1' type="button" class="btn btn-danger btn-sm btn-block">Bet</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='fold_1' type="button" class="btn btn-danger btn-sm btn-block">Fold</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='call_1' type="button" class="btn btn-danger btn-sm btn-block">Call</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='raise_1' type="button" class="btn btn-danger btn-sm btn-block">Raise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters add-margins">
+        <div class="col center">
+            <p id="wager_1" class="wager_1">0</p>
+        </div>
+        <div class="col-lg-auto center">
+            <img id='card0_share' src="images/red_back.png" alt="card1" class="square">
+            <img id='card1_share' src="images/red_back.png" alt="card2" class="square">
+            <img id='card2_share' src="images/red_back.png" alt="card3" class="square">
+            <img id='card3_share' src="images/red_back.png" alt="card4" class="square">
+            <img id='card4_share' src="images/red_back.png" alt="card5" class="square">
+        </div>
+        <div class="col center">
+            <p id="wager_0" class="wager_0">0</p>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-lg-2 center">
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='check_0' type="button" class="btn btn-danger btn-sm btn-block">Check</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='bet_0' type="button" class="btn btn-danger btn-sm btn-block">Bet</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='fold_0' type="button" class="btn btn-danger btn-sm btn-block">Fold</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='call_0' type="button" class="btn btn-danger btn-sm btn-block">Call</button>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col button-margins">
+                    <button id='raise_0' type="button" class="btn btn-danger btn-sm btn-block">Raise</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 center chips">
+            <p id="chips_0">0</p>
+        </div>
+        <div class="col-lg-auto center">
+            <img id='card0_0' src="images/red_back.png" alt="card1" class="square">
+            <img id='card1_0' src="images/red_back.png" alt="card2" class="square">
+        </div>
+
+        <div class="col-lg-2 center">
+            <img class="square" src="images/Male.gif" alt="Player 2">
+        </div>
+    </div>
+
+    <script src="scripts/Card.js"></script>
+    <script src="scripts/Deck.js"></script>
+    <script src="scripts/Hand.js"></script>
+    <script src="scripts/Player.js"></script>
+    <script src="scripts/Game.js"></script>
+    <script src="scripts/index.js"></script>
+</div>
+</body>
+</html>
